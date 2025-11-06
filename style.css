@@ -1,0 +1,123 @@
+:root {
+    --border-radius: 5px;
+    --margin: .3rem;
+    --padding: .3rem;
+    --gap: 1rem;
+    --margin-top: 2rem;
+    --margin-bottom: 0.3rem;
+
+  /* Color palette (5 colors) */
+    --color-primary: #0ea5e9;   /* bright sky blue - primary buttons/links */
+    --color-secondary: #10b981; /* green - badges/success states */
+    --color-accent: #f97316;    /* orange - CTAs, sale highlights */
+    --color-bg: #f8fafc;        /* very light gray - page background */
+    --color-text: #0f172a;      /* dark slate - main text */
+    --color-card: #E6FFF5;
+}
+* {
+    margin: 0rem;
+    padding: var(--padding);
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-bg);
+}
+header {
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+header h1::before {
+    content: "🛒 ";
+}
+header h1::after {
+    content: "🛒 ";
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    text-align: center;
+}
+#web_logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  gap: var(--gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1rem;
+  justify-content: center;
+}
+nav ul li a {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-bg);
+}
+
+#cart-icon {
+    color: var(--color-text);
+}
+
+button {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    border: none;
+    padding: 0.5rem 1rem;
+}
+button:hover {
+    background-color: var(--color-secondary);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  max-width: 220px;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--margin-bottom);
+}
+.product-grid {
+    display: flex;
+    gap: var(--gap);
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.product-card {
+    background-color: var(--color-bg);
+    padding: 0.8rem;
+}
+
+.card {
+    background-color: var(--color-secondary);
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card + .card {
+  margin-top: var(--margin-top);    /* gap between cards */
+}
+
+.social-media {
+    text-align: center;
+}
+.social-media ul {
+    padding: 0rem;
+    margin: 1rem auto;
+    list-style: none;
+    display: flex;              /* puts all items in one row */
+    justify-content: center;    /* centers the row horizontally */
+    align-items: center;        /* aligns items vertically */
+    gap: var(--gap);      /* adds space between icons */
+}
