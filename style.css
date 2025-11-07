@@ -90,6 +90,8 @@ button:hover {
 }
 .product-grid {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: var(--gap);
     align-items: stretch;
     flex-wrap: wrap;
