@@ -123,3 +123,7 @@ button:hover {
     align-items: center;        /* aligns items vertically */
     gap: var(--gap);      /* adds space between icons */
 }
+
+.social-media ul li a {
+    font-size: 1.5rem;
+}
